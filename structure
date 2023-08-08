@@ -1,0 +1,58 @@
+// Класс игры Metarchy
+class MetarchyGame {
+  constructor(numPlayers) {
+    this.numPlayers = numPlayers;
+    this.players = [];
+    this.round = 1;
+    this.maxRounds = this.calculateMaxRounds();
+  }
+
+  calculateMaxRounds() {
+    // Расчет максимального количества ходов в зависимости от количества игроков
+    // Вернуть соответствующее значение
+  }
+
+  startGame() {
+    // Инициализация игроков и игровых ресурсов
+  }
+
+  phase1Event() {
+    // Фаза 1 - Событие: случайное определение и разыгрывание карты события
+  }
+
+  phase2Distribution() {
+    // Фаза 2 - Распределение: Игроки размещают своих Акторов по Локациям
+  }
+
+  phase3Actions() {
+    // Фаза 3 - Действия: Игроки разыгрывают Карты Действий
+  }
+
+  phase4Conflict() {
+    // Фаза 4 - Конфликт: Разрешение конфликтов между Акторами в Локациях
+  }
+
+  phase5Exchange() {
+    // Фаза 5 - Обмен: Обмен ресурсами и приобретение карт действий
+  }
+
+  checkWinner() {
+    // Проверка победителя в конце игры и объявление результатов
+  }
+}
+
+// Пример использования
+const numPlayers = 4;
+const game = new MetarchyGame(numPlayers);
+game.startGame();
+
+while (game.round <= game.maxRounds) {
+  game.phase1Event();
+  game.phase2Distribution();
+  game.phase3Actions();
+  game.phase4Conflict();
+  game.phase5Exchange();
+  game.round++;
+}
+
+game.checkWinner();
